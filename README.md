@@ -4,7 +4,7 @@ Hi Everyone My Name is Prince This is my final project for the SWE Program (Trip
 
 How To run this project Locally
 
-in Termnal
+in Terminal
 Step 1 Npm install
 
 Step 2 Npm Run Dev
