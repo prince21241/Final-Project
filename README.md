@@ -1,11 +1,16 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Hi Everyone My Name is Prince This is my final project for the SWE Program (Tripleten) for the final project i'm creating An Movie Website that allows u search movies by name,add them as Favorties and UnFavorite the movie that u selected this project as of right now Front-end using the TMDB API https://www.themoviedb.org/ and also u will be able to see this project on the website when i deploy the project to the Domain and the technologies i used for this projects are React.js, Javascript , HTML , CSS.
 
-Currently, two official plugins are available:
+How To run this project Locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+in Termnal
+Step 1 Npm install
+
+Step 2 Npm Run Dev
+
+Github Repo for this Project
+https://github.com/prince21241/Final-Project
 
 ## Expanding the ESLint configuration
 
