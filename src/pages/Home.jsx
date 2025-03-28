@@ -4,7 +4,7 @@ import { searchMovies, getPopularMovies } from "../api/Api";
 import "../css/Home.css";
 
 function Home() {
-  const [searchQuery, setSearchQuery] = useState(""); // Fixed typo
+  const [searchQuery, setSearchQuery] = useState("");
   const [movies, setMovies] = useState([]);
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -25,6 +25,8 @@ function Home() {
     };
     loadPopularMovies();
   }, []);
+
+  // Search Feature
 
   const handleSearch = async (e) => {
     e.preventDefault();
