@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import "../css/Navbar.css";
-import "../assets/logo.png";
+import "./Navbar.css";
 
 function Navbar() {
   return (
@@ -11,7 +10,7 @@ function Navbar() {
         {" "}
         {/* Fixed className */}
         <Link to="/" className="brand-link">
-          <img src="{logo}"></img>
+          Movie Favorites App
         </Link>
       </div>
       <div className="navbar-links">
