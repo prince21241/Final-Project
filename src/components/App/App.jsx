@@ -4,6 +4,7 @@ import Home from "../Home/Home";
 import Favorites from "../Favorites/Favorites";
 import Navbar from "../NavBar/NavBar";
 import { MovieProvider } from "../../contexts/MovieContext";
+import Footer from "../Footer/Footer";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/favorites" element={<Favorites />} />
           </Routes>
+          <Footer />
         </main>
       </div>
     </MovieProvider>

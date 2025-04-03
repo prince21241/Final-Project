@@ -1,0 +1,18 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  padding-top: 85px;
+}
+
+.footer_name {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  margin-left: 40px;
+}
+
+.footer_year {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  margin-right: 40px;
+}
