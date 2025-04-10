@@ -1,52 +1,14 @@
 import MovieCard from "../MovieCard/MovieCard";
-import { useState, useEffect } from "react";
-import { searchMovies, getPopularMovies } from "../../api/Api";
 import "./Home.css";
 
-function Home() {
-  const [searchQuery, setSearchQuery] = useState("");
-  const [movies, setMovies] = useState([]);
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    const loadPopularMovies = async () => {
-      try {
-        console.log("Fetching popular movies...");
-        const popularMovies = await getPopularMovies();
-        console.log("Movies received:", popularMovies);
-        setMovies(popularMovies);
-      } catch (err) {
-        console.error("Error fetching movies:", err);
-        setError("Failed to load movies");
-      } finally {
-        setLoading(false);
-      }
-    };
-    loadPopularMovies();
-  }, []);
-
-  // Search Feature
-
-  const handleSearch = async (e) => {
-    e.preventDefault();
-    if (!searchQuery.trim()) return;
-    if (loading) return;
-
-    setLoading(true);
-    try {
-      const searchResults = await searchMovies(searchQuery);
-      setMovies(searchResults);
-      setError(null);
-    } catch (err) {
-      console.log(err);
-      setError("Failed to search movies...");
-    } finally {
-      setLoading(false);
-    }
-    setSearchQuery("");
-  };
-
+function Home({
+  movies,
+  loading,
+  error,
+  searchQuery,
+  setSearchQuery,
+  handleSearch,
+}) {
   return (
     <div className="home">
       {/* Search Form */}
