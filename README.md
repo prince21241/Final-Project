@@ -10,7 +10,11 @@ Step 1 Npm install
 Step 2 Npm Run Dev
 
 Github Repo for this Project
+Website for the Project
 https://github.com/prince21241/Final-Project
+
+Deployed Website
+https://prince21241.github.io/
 
 ## Expanding the ESLint configuration
 

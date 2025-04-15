@@ -5,24 +5,24 @@ import MovieCard from "../MovieCard/MovieCard";
 function Favorites() {
   const { favorites } = useMovieContext();
 
-  if (favorites) {
+  if (favorites && favorites.length > 0) {
     return (
-      <div className="favorites">
+      <section className="favorites">
         <h2>Your Favorites</h2>
-        <div className="movies-grid">
+        <ul className="movies-grid">
           {favorites.map((movie) => (
             <MovieCard movie={movie} key={movie.id} />
           ))}
-        </div>
-      </div>
+        </ul>
+      </section>
     );
   }
 
   return (
-    <div className="favorites-empty">
+    <section className="favorites-empty">
       <h2>No Favorite Movies Yet</h2>
       <p>Start adding movies to your favorites and they will appear here!</p>
-    </div>
+    </section>
   );
 }
 
